@@ -1,0 +1,311 @@
+trait_robot_power_drills = {
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+	modifier = {
+		tile_resource_minerals_mult = 0.10
+	}
+}
+
+trait_robot_harvesters = {
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		tile_resource_food_mult = 0.10
+	}
+}
+
+trait_robot_efficient_processors = {
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		pop_robot_upkeep_mult = -0.10
+	}
+}
+
+trait_robot_logic_engines = {
+	cost = 2
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		tile_resource_society_research_mult = 0.10
+		tile_resource_physics_research_mult = 0.10
+		tile_resource_engineering_research_mult = 0.10
+	}
+}
+
+trait_robot_loyalty_circuits = {
+	cost = 2
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		pop_happiness = 0.05
+		pop_government_ethic_attraction = 0.50
+	}
+}
+
+trait_robot_domestic_protocols = {
+	cost = 1
+	
+	initial = no
+	randomized = no
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		pop_owner_happiness = 0.05
+	}
+}
+
+trait_robot_superconductive = {
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		tile_resource_energy_mult = 0.10
+	}
+}
+
+trait_robot_double_jointed = {
+	cost = 1
+	opposites = { "trait_robot_bulky" }
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		pop_resettlement_cost_mult = -0.5
+	}
+}
+
+trait_robot_bulky = {
+	cost = -1
+	opposites = { "trait_robot_double_jointed" }
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		pop_resettlement_cost_mult = 0.5
+	}
+}
+
+trait_robot_enhanced_memory = {
+	cost = 2
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		leader_skill_levels = 2
+	}
+}
+
+trait_robot_emotion_emulators = {
+	cost = 1
+	opposites = { "trait_robot_uncanny" }
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+	custom_tooltip = TRAIT_EMOTION_EMULATORS_EFFECT
+}
+
+trait_robot_uncanny = {
+	cost = -1
+	opposites = { "trait_robot_emotion_emulators" }
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+	custom_tooltip = TRAIT_UNCANNY_EFFECT
+}
+
+trait_robot_durable = {
+	cost = 1
+	opposites = { "trait_robot_high_maintenance" }
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		pop_consumer_goods_mult = -0.25
+	}
+}
+
+trait_robot_high_maintenance = {
+	cost = -1
+	opposites = { "trait_robot_durable" }
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		pop_consumer_goods_mult = 0.25
+	}
+}
+
+trait_robot_learning_algorithms = {
+	cost = 1
+	opposites = { "trait_robot_repurposed_hardware" }
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		species_leader_exp_gain = 0.25
+	}
+}
+
+trait_robot_repurposed_hardware = {
+	cost = -1
+	opposites = { "trait_robot_learning_algorithms" }
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+	
+	modifier = {
+		species_leader_exp_gain = -0.25
+	}
+}
+
+
+trait_robot_propaganda_machines = {
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL }
+	species_potential_add= {
+		from = {
+			OR = {
+				has_country_flag = flesh_weakened
+				has_country_flag = synthetic_empire
+			}
+		}
+	}
+
+	modifier = {
+		tile_resource_unity_mult = 0.15
+	}
+}
