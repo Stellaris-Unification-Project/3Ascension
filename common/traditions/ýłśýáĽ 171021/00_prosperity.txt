@@ -166,7 +166,7 @@ tr_prosperity_fleet_logistical_corps = {
 	}
 	
 	modifier = {
-		ship_upkeep_mult = -0.10
+		ships_upkeep_mult = -0.10
 	}
 
 	tradition_swap = {

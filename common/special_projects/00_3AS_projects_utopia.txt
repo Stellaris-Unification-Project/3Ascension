@@ -24,9 +24,9 @@ special_project = {
 		if = {
 			limit = {
 				owner = {
-					AND = {
-						NOT = { has_ascension_perk =ap_mind_over_matter }
-						NOT = { has_ascension_perk = ap_transcendence  }
+					NOR = {
+						has_ascension_perk =ap_mind_over_matter 
+						has_ascension_perk = ap_transcendence  
 					}
 					
 				}

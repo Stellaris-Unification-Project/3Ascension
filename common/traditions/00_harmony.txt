@@ -28,10 +28,7 @@ tr_harmony_adopt = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			OR = {
-				has_authority = auth_machine_intelligence
-				has_country_flag = synthetic_empire
-			}
+			is_synthetic_empire = yes
 		}
 		modifier = {
 			pop_robot_build_speed_mult = 0.33
@@ -172,10 +169,7 @@ tr_harmony_utopian_dream = {
 		inherit_name = no
 		trigger = {
 			AND = {
-			OR = {
-				has_country_flag = synthetic_empire
-				has_authority = auth_machine_intelligence
-			}
+			is_synthetic_empire = yes
 			NOR = {
 				has_valid_civic = civic_machine_assimilator
 				has_valid_civic = civic_machine_servitor

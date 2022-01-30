@@ -93,9 +93,9 @@ planet_event = {
 										else = {
 											if = { # cyborg empire
 												limit = {
-													AND = {
-														NOT = { has_living_standard = { type = living_standard_psi_assimilation }}
-														NOT = { has_trait = trait_cybernetic }
+													NOR = {
+														has_living_standard = { type = living_standard_psi_assimilation }
+														has_trait = trait_cybernetic 
 													}
 												}
 												modify_species = {
