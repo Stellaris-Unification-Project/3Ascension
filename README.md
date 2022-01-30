@@ -1,2 +1,2 @@
-# 3Ascension_path_no_limit_-_synth_buff
-https://steamcommunity.com/sharedfiles/filedetails/?id=1404523224
+# 3Ascension
+3Ascension path no limit - synth buff
