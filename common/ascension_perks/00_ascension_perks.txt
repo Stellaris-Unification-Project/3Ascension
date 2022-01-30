@@ -1085,8 +1085,8 @@ ap_machine_worlds = {
 	potential = {
 		host_has_dlc = "Synthetic Dawn Story Pack"
 		is_synthetic_empire = yes
-		NOT = { has_civic = civic_machine_assimilator }
-		NOT = {
+		NOR = {
+			has_civic = civic_machine_assimilator
 			has_ascension_perk = ap_machine_worlds
 		}
 	}
